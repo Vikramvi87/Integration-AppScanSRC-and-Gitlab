@@ -4,11 +4,12 @@ It will help to Integrate AppScan Source on Gitlab. It will enable Gitlab to sta
 <br>
 Requirements:<br>
 1 - AppScan Source in Windows Server (it was tested on Windows 2019).<br>
-2 - Install Gitlab Runner for Windows in same Windows Server that has AppScan Source.<br>
-2.1 - Add Gitlab Runner as a Service.<br>
-2.2 - Change User Service to same User that has access in AppScan Enterprise.<br>
-3 - Enable Long Paths in Windows. It is not mandatory but I guess it will safe some troubleshoot time.<br>
-4 - Create AppScan Enterprise token <install_dir>\bin\ounceautod.exe -u username -p password --persist.<br>
+2 - Add AppScan Source bin folder to Windows PATH Environment Variable.<br>
+3 - Install Gitlab Runner for Windows in same Windows Server that has AppScan Source.<br>
+3.1 - Add Gitlab Runner as a Service.<br>
+3.2 - Change User Service to same User that has access in AppScan Enterprise.<br>
+4 - Enable Long Paths in Windows. It is not mandatory but I guess it will safe some troubleshoot time.<br>
+5 - Create AppScan Enterprise token <install_dir>\bin\ounceautod.exe -u username -p password --persist.<br>
   Source: https://help.hcltechsw.com/appscan/Source/10.0.6/topics/ounce_auto_login.html <br>
   <br>
 
