@@ -1,14 +1,16 @@
 # Integration AppScan Source and Gitlab
 
-It will help to Integrate AppScan Source on Gitlab. It will enable Gitlab to start scan, generate report, publish results to AppScan Source Database and AppScan Enterprise and check for Security Gate.
+It will help to Integrate AppScan Source on Gitlab. It will enable Gitlab to start scan, generate report, publish results to AppScan Source Database and AppScan Enterprise and check for Security Gate.<br>
 
-Requirements:
-1 - AppScan Source in Windows Server (it was tested on Windows 2019).
-2 - Install Gitlab Runner for Windows in same Windows Server that has AppScan Source.
-2.1 - Add Gitlab Runner as a Service.
-2.2 - Change User Service to same User that has access in AppScan Enterprise.
-3 - Enable Long Paths in Windows. It is not mandatory but I guess it will safe some troubleshoot time.
-4 - Create AppScan Enterprise token <install_dir>\bin\ounceautod.exe -u <user name> -p <password> --persist. Source: https://help.hcltechsw.com/appscan/Source/10.0.6/topics/ounce_auto_login.html 
+Requirements:<br>
+1 - AppScan Source in Windows Server (it was tested on Windows 2019).<br>
+2 - Install Gitlab Runner for Windows in same Windows Server that has AppScan Source.<br>
+2.1 - Add Gitlab Runner as a Service.<br>
+2.2 - Change User Service to same User that has access in AppScan Enterprise.<br>
+3 - Enable Long Paths in Windows. It is not mandatory but I guess it will safe some troubleshoot time.<br>
+4 - Create AppScan Enterprise token <install_dir>\bin\ounceautod.exe -u <user name> -p <password> --persist.<br>
+  Source: https://help.hcltechsw.com/appscan/Source/10.0.6/topics/ounce_auto_login.html <br>
+  <br>
 
 ```yaml
 variables:
