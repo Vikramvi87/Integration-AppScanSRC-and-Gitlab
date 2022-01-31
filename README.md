@@ -38,7 +38,7 @@ scan-job:
   - write-host "======== Step 1 - Building artifact ========"
   - gradle build
   - write-host "======== Step 2 - Creating config scan file ========"
-  - echo "login_file $aseHostname $aseToken -acceptssl" >> script.scan
+  - echo "login_file $aseHostname $aseToken -acceptssl" > script.scan
   - echo "RUNAS AUTO" >> script.scan
   - echo "oa $artifactFolder\$artifactName -appserver_type Tomcat7 -no_ear_project" >> script.scan
   - echo "ra $artifactFolder\$artifactName.ozasmt -scanconfig Normal_scan -name $artifactName-$CI_JOB_ID" >> script.scan
