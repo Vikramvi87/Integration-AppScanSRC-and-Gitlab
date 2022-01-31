@@ -8,7 +8,7 @@ Requirements:<br>
 2.1 - Add Gitlab Runner as a Service.<br>
 2.2 - Change User Service to same User that has access in AppScan Enterprise.<br>
 3 - Enable Long Paths in Windows. It is not mandatory but I guess it will safe some troubleshoot time.<br>
-4 - Create AppScan Enterprise token <install_dir>\bin\ounceautod.exe -u <user name> -p <password> --persist.<br>
+4 - Create AppScan Enterprise token <install_dir>\bin\ounceautod.exe -u username -p password --persist.<br>
   Source: https://help.hcltechsw.com/appscan/Source/10.0.6/topics/ounce_auto_login.html <br>
   <br>
 
