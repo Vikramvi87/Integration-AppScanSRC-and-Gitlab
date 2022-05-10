@@ -76,6 +76,7 @@ scan-job:
   - echo "Security Gate passed"
 
   artifacts:
+    when: always
     paths:
       - "*.ozasmt"
       - "*.zip"
